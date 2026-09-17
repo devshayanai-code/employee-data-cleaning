@@ -7,7 +7,7 @@ print(df.info())
 print(df.describe())
 print(df.isnull().sum())
 
-df.dropna(subset=["EmployeeID"])
+df = df.dropna(subset=["EmployeeID"])
 print(df)
 
 df["Name"]=df["Name"].str.strip().str.title()
